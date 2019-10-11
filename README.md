@@ -92,4 +92,4 @@ Your build project is available in `/dist`
     user : { Name : "...", ...}
     }```
 - By default the application will create automatically an user table and table. You can look for this into
-`src/config/database/mongo.ts`
+`src/config/database/mongo.ts`  
