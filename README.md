@@ -70,3 +70,26 @@ Now we are ready just type in terminal :
 `npm run build start`
 
 Your build project is available in `/dist`
+
+## Try login 
+
+- Dont forget to setup your mongo database configuration. `src/config/mongo.ts`
+    - Host
+    - Username
+    - Password
+    - Database 
+    - Port
+    
+- Open Postman and try a post at this endpoint : 
+    - Endpoint : http://localhost:3001/login
+    - Data : ```
+    {
+        username : "admin",
+        password : "admin
+    }
+           ```
+    - Should return you an object like : ```{ passport : "...", 
+    user : { Name : "...", ...}
+    }```
+- By default the application will create automatically an user table and table. You can look for this into
+`src/config/database/mongo.ts`
